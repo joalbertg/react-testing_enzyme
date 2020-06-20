@@ -1,68 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Counter component with testing, enzyme
 
-## Available Scripts
+- [Jest][jestjs]
+- [Enzyme][enzyme]
+- [Enzyme to json][enzyme_to_json]
 
-In the project directory, you can run:
+[jestjs]: https://jestjs.io/docs/en/expect
+[enzyme]: https://enzymejs.github.io/enzyme/
+[enzyme_to_json]: https://www.npmjs.com/package/enzyme-to-json
 
-### `yarn start`
+### Scripts
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> run `yarn test`
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+> run `yarn start`
 
-### `yarn test`
+### Installs
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```shell
+yarn add enzyme enzyme-adapter-react-16 --dev
+yarn add enzyme-to-json --dev
+```
 
-### `yarn build`
+#### Project Structure
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> run `tree -I "node_modules|public"`
+```shell
+.
+├── README.md
+├── package.json
+├── src
+│   ├── CounterApp.js
+│   ├── FirstApp.js
+│   ├── base
+│   │   ├── 02-template-string.js
+│   │   ├── 05-funciones.js
+│   │   ├── 06-deses-obj.js
+│   │   ├── 07-deses-arr.js
+│   │   ├── 08-imp-exp.js
+│   │   ├── 09-promesas.js
+│   │   └── 11-async-await.js
+│   ├── data
+│   │   └── heroes.js
+│   ├── index.css
+│   ├── index.js
+│   ├── setupTests.js
+│   └── tests
+│       ├── CounterApp.test.js
+│       ├── FirstApp.test.js
+│       ├── __snapshots__
+│       │   ├── CounterApp.test.js.snap
+│       │   └── FirstApp.test.js.snap
+│       ├── base
+│       │   ├── 02-template-string.test.js
+│       │   ├── 05-funciones.test.js
+│       │   ├── 07-deses-arr.test.js
+│       │   ├── 08-imp-exp.test.js
+│       │   ├── 09-promesas.test.js
+│       │   └── 11-async-await.test.js
+│       └── demo.test.js
+└── yarn.lock
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+6 directories, 27 files
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
